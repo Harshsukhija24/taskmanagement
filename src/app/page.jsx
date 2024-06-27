@@ -1,5 +1,5 @@
 import React from "react";
-import TicketCard from "../";
+import TicketCard from "./(components)/TicketCard";
 
 const getTickets = async () => {
   try {
@@ -32,7 +32,7 @@ const Dashboard = async () => {
   ];
 
   return (
-    <div className="p-5">
+    <div className="p-5 ">
       <div>
         {tickets &&
           uniqueCategories?.map((uniqueCategory, categoryIndex) => (
